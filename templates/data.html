@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+{% for x in data%}
+<div class = "source">
+    <h2>{{x.source}}</h1>
+    <p3 class = 'text-muted' style="font-size:15px;">
+        Username : {{x.username}}
+        </p3>
+    <br>
+    <p3 class = 'text-muted' style="font-size:15px;">
+        Password : {{x.password}}
+    </p3>
+    <br>
+    <p3 class = 'text-muted' style="font-size:15px;">
+        Link : <a href="{{x.link}}">{{x.link}}</a>
+    </p3>
+</div>
+{%endfor%}
+{% endblock content %}
